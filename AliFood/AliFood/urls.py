@@ -57,8 +57,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/',include((router.urls))),
     path('admin/', admin.site.urls),
-    path('api-auth',include('rest_framework.urls')),
+    path('api-auth/',include('rest_framework.urls')),
+    path('accounts/profile/',FoodApiList.as_view()),
     path('djoser-auth/',include('djoser.urls')),
     path('auth/',include('djoser.urls.authtoken')),
+
 
 ]
