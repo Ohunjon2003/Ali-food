@@ -38,9 +38,9 @@ router.register('comment-list',CommentApiViewSet)
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Qurilish API",
+        title="Food API",
         default_version='v1',
-        description="Qurilish binosi haqida",
+        description="Foods about",
         terms_of_service="https://www.google.com/policies/terms/",
         contact=openapi.Contact(email="contact@snippets.local"),
         license=openapi.License(name="BSD License"),
